@@ -8,12 +8,12 @@ if Config.Framework == "ESX" then
         Wait(2000)
     end)
 
-    RegisterNetEvent('esx:setJob')
-    AddEventHandler('esx:setJob', function(job)
-        PlayerData.job = job
-        PlayerJob = job
-        Wait(500)
-    end)
+    --RegisterNetEvent('esx:setJob')
+    --AddEventHandler('esx:setJob', function(job)
+    --   PlayerData.job = job
+    --    PlayerJob = job
+    --    Wait(500)
+    --end)  
 
 elseif Config.Framework == "qbcore" then
     QBCore = exports['qb-core']:GetCoreObject()
